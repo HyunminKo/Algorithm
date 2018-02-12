@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F1CA42D2031BB9D003A2025 /* PrintPerTen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1CA42C2031BB9D003A2025 /* PrintPerTen.cpp */; };
+		1F1CA43A203202A8003A2025 /* AddCycle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1CA439203202A8003A2025 /* AddCycle.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +34,12 @@
 		1F1CA4282031B75F003A2025 /* Sum.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Sum.cpp; sourceTree = "<group>"; };
 		1F1CA42A2031B83C003A2025 /* SumOfNumber.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SumOfNumber.cpp; sourceTree = "<group>"; };
 		1F1CA42C2031BB9D003A2025 /* PrintPerTen.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PrintPerTen.cpp; sourceTree = "<group>"; };
+		1F1CA42E2031D54D003A2025 /* TestGrade.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TestGrade.cpp; sourceTree = "<group>"; };
+		1F1CA4302031D9DB003A2025 /* SecondScore.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SecondScore.cpp; sourceTree = "<group>"; };
+		1F1CA4332031E84C003A2025 /* NumberLessThanX.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NumberLessThanX.cpp; sourceTree = "<group>"; };
+		1F1CA4352031F669003A2025 /* Average.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Average.cpp; sourceTree = "<group>"; };
+		1F1CA4372031FAA5003A2025 /* AverageOver.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AverageOver.cpp; sourceTree = "<group>"; };
+		1F1CA439203202A8003A2025 /* AddCycle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AddCycle.cpp; sourceTree = "<group>"; };
 		1F57E245203172810018B319 /* CodingPratice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodingPratice; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F57E248203172810018B319 /* Helloworld.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Helloworld.cpp; sourceTree = "<group>"; };
 		1F57E250203173CC0018B319 /* A+B.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "A+B.cpp"; sourceTree = "<group>"; };
@@ -78,6 +84,19 @@
 			path = ForStatement;
 			sourceTree = "<group>";
 		};
+		1F1CA4322031E7EC003A2025 /* IFStatement */ = {
+			isa = PBXGroup;
+			children = (
+				1F1CA42E2031D54D003A2025 /* TestGrade.cpp */,
+				1F1CA4302031D9DB003A2025 /* SecondScore.cpp */,
+				1F1CA4332031E84C003A2025 /* NumberLessThanX.cpp */,
+				1F1CA4352031F669003A2025 /* Average.cpp */,
+				1F1CA4372031FAA5003A2025 /* AverageOver.cpp */,
+				1F1CA439203202A8003A2025 /* AddCycle.cpp */,
+			);
+			path = IFStatement;
+			sourceTree = "<group>";
+		};
 		1F57E23C203172810018B319 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +116,7 @@
 		1F57E247203172810018B319 /* CodingPratice */ = {
 			isa = PBXGroup;
 			children = (
+				1F1CA4322031E7EC003A2025 /* IFStatement */,
 				1F1CA4172031A6C9003A2025 /* ForStatement */,
 				1F57E25F203183A00018B319 /* 사칙연산 */,
 				1F57E24F2031738D0018B319 /* 입출력받아오기 */,
@@ -188,7 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F1CA42D2031BB9D003A2025 /* PrintPerTen.cpp in Sources */,
+				1F1CA43A203202A8003A2025 /* AddCycle.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
