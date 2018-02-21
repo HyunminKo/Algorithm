@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F1CA43A203202A8003A2025 /* AddCycle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1CA439203202A8003A2025 /* AddCycle.cpp */; };
+		1F1CA441203418D2003A2025 /* StarPrint11.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1CA440203418D2003A2025 /* StarPrint11.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +40,9 @@
 		1F1CA4352031F669003A2025 /* Average.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Average.cpp; sourceTree = "<group>"; };
 		1F1CA4372031FAA5003A2025 /* AverageOver.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AverageOver.cpp; sourceTree = "<group>"; };
 		1F1CA439203202A8003A2025 /* AddCycle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AddCycle.cpp; sourceTree = "<group>"; };
+		1F1CA43C2032E53F003A2025 /* SelfNumber.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SelfNumber.cpp; sourceTree = "<group>"; };
+		1F1CA43E20340EDB003A2025 /* HanNumber.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HanNumber.cpp; sourceTree = "<group>"; };
+		1F1CA440203418D2003A2025 /* StarPrint11.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StarPrint11.cpp; sourceTree = "<group>"; };
 		1F57E245203172810018B319 /* CodingPratice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodingPratice; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F57E248203172810018B319 /* Helloworld.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Helloworld.cpp; sourceTree = "<group>"; };
 		1F57E250203173CC0018B319 /* A+B.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "A+B.cpp"; sourceTree = "<group>"; };
@@ -97,6 +100,16 @@
 			path = IFStatement;
 			sourceTree = "<group>";
 		};
+		1F1CA43B2032E523003A2025 /* UsingFunction */ = {
+			isa = PBXGroup;
+			children = (
+				1F1CA43C2032E53F003A2025 /* SelfNumber.cpp */,
+				1F1CA43E20340EDB003A2025 /* HanNumber.cpp */,
+				1F1CA440203418D2003A2025 /* StarPrint11.cpp */,
+			);
+			path = UsingFunction;
+			sourceTree = "<group>";
+		};
 		1F57E23C203172810018B319 = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +129,7 @@
 		1F57E247203172810018B319 /* CodingPratice */ = {
 			isa = PBXGroup;
 			children = (
+				1F1CA43B2032E523003A2025 /* UsingFunction */,
 				1F1CA4322031E7EC003A2025 /* IFStatement */,
 				1F1CA4172031A6C9003A2025 /* ForStatement */,
 				1F57E25F203183A00018B319 /* 사칙연산 */,
@@ -208,7 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F1CA43A203202A8003A2025 /* AddCycle.cpp in Sources */,
+				1F1CA441203418D2003A2025 /* StarPrint11.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
