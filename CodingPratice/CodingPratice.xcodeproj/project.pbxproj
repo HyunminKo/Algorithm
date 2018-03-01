@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F206F012048088A0029BA33 /* OperatorAdd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F206F002048088A0029BA33 /* OperatorAdd.cpp */; };
+		1F206F032048096D0029BA33 /* Tetromino.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F206F022048096D0029BA33 /* Tetromino.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,6 +44,7 @@
 		1F1CA43E20340EDB003A2025 /* HanNumber.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HanNumber.cpp; sourceTree = "<group>"; };
 		1F1CA440203418D2003A2025 /* StarPrint11.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StarPrint11.cpp; sourceTree = "<group>"; };
 		1F206F002048088A0029BA33 /* OperatorAdd.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OperatorAdd.cpp; sourceTree = "<group>"; };
+		1F206F022048096D0029BA33 /* Tetromino.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Tetromino.cpp; sourceTree = "<group>"; };
 		1F23C278203D9DBF004A8825 /* CountingWord.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CountingWord.cpp; sourceTree = "<group>"; };
 		1F57E245203172810018B319 /* CodingPratice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodingPratice; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F57E248203172810018B319 /* Helloworld.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Helloworld.cpp; sourceTree = "<group>"; };
@@ -116,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				1F206F002048088A0029BA33 /* OperatorAdd.cpp */,
+				1F206F022048096D0029BA33 /* Tetromino.cpp */,
 			);
 			path = Samsung;
 			sourceTree = "<group>";
@@ -243,7 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F206F012048088A0029BA33 /* OperatorAdd.cpp in Sources */,
+				1F206F032048096D0029BA33 /* Tetromino.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
