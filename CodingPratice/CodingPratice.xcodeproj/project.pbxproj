@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F1CA441203418D2003A2025 /* StarPrint11.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F1CA440203418D2003A2025 /* StarPrint11.cpp */; };
+		1F206F012048088A0029BA33 /* OperatorAdd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F206F002048088A0029BA33 /* OperatorAdd.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +43,8 @@
 		1F1CA43C2032E53F003A2025 /* SelfNumber.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SelfNumber.cpp; sourceTree = "<group>"; };
 		1F1CA43E20340EDB003A2025 /* HanNumber.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HanNumber.cpp; sourceTree = "<group>"; };
 		1F1CA440203418D2003A2025 /* StarPrint11.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StarPrint11.cpp; sourceTree = "<group>"; };
+		1F206F002048088A0029BA33 /* OperatorAdd.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OperatorAdd.cpp; sourceTree = "<group>"; };
+		1F23C278203D9DBF004A8825 /* CountingWord.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CountingWord.cpp; sourceTree = "<group>"; };
 		1F57E245203172810018B319 /* CodingPratice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodingPratice; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F57E248203172810018B319 /* Helloworld.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Helloworld.cpp; sourceTree = "<group>"; };
 		1F57E250203173CC0018B319 /* A+B.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "A+B.cpp"; sourceTree = "<group>"; };
@@ -110,6 +112,23 @@
 			path = UsingFunction;
 			sourceTree = "<group>";
 		};
+		1F206EFF204808790029BA33 /* Samsung */ = {
+			isa = PBXGroup;
+			children = (
+				1F206F002048088A0029BA33 /* OperatorAdd.cpp */,
+			);
+			path = Samsung;
+			sourceTree = "<group>";
+		};
+		1F23C277203D9DA0004A8825 /* 1차원배열사용하기 */ = {
+			isa = PBXGroup;
+			children = (
+				1F23C278203D9DBF004A8825 /* CountingWord.cpp */,
+			);
+			name = "1차원배열사용하기";
+			path = "1차원배열사용하기";
+			sourceTree = "<group>";
+		};
 		1F57E23C203172810018B319 = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +148,8 @@
 		1F57E247203172810018B319 /* CodingPratice */ = {
 			isa = PBXGroup;
 			children = (
+				1F206EFF204808790029BA33 /* Samsung */,
+				1F23C277203D9DA0004A8825 /* 1차원배열사용하기 */,
 				1F1CA43B2032E523003A2025 /* UsingFunction */,
 				1F1CA4322031E7EC003A2025 /* IFStatement */,
 				1F1CA4172031A6C9003A2025 /* ForStatement */,
@@ -222,7 +243,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F1CA441203418D2003A2025 /* StarPrint11.cpp in Sources */,
+				1F206F012048088A0029BA33 /* OperatorAdd.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
