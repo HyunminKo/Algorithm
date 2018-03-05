@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F28EC8F204D7C230073D14B /* PowerSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F28EC8E204D7C230073D14B /* PowerSet.cpp */; };
+		1F28EC93204DAB890073D14B /* MergeSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F28EC92204DAB890073D14B /* MergeSort.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -52,6 +52,7 @@
 		1F28EC86204D37C00073D14B /* CountingCellsinaBlob.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CountingCellsinaBlob.cpp; sourceTree = "<group>"; };
 		1F28EC88204D65D50073D14B /* Nqueens.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Nqueens.cpp; sourceTree = "<group>"; };
 		1F28EC8E204D7C230073D14B /* PowerSet.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PowerSet.cpp; sourceTree = "<group>"; };
+		1F28EC92204DAB890073D14B /* MergeSort.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MergeSort.cpp; sourceTree = "<group>"; };
 		1F29594E2048866200EAE57D /* NQueen.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NQueen.cpp; sourceTree = "<group>"; };
 		1F57E245203172810018B319 /* CodingPratice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodingPratice; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F57E248203172810018B319 /* Helloworld.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Helloworld.cpp; sourceTree = "<group>"; };
@@ -150,13 +151,30 @@
 		1F28EC81204C28130073D14B /* Inflearn */ = {
 			isa = PBXGroup;
 			children = (
+				1F28EC91204D93270073D14B /* Sort */,
+				1F28EC90204D931E0073D14B /* Recursion */,
 				1F28EC82204C32D60073D14B /* Basic.cpp */,
+			);
+			path = Inflearn;
+			sourceTree = "<group>";
+		};
+		1F28EC90204D931E0073D14B /* Recursion */ = {
+			isa = PBXGroup;
+			children = (
 				1F28EC84204C39B90073D14B /* Maze.cpp */,
 				1F28EC86204D37C00073D14B /* CountingCellsinaBlob.cpp */,
 				1F28EC88204D65D50073D14B /* Nqueens.cpp */,
 				1F28EC8E204D7C230073D14B /* PowerSet.cpp */,
 			);
-			path = Inflearn;
+			path = Recursion;
+			sourceTree = "<group>";
+		};
+		1F28EC91204D93270073D14B /* Sort */ = {
+			isa = PBXGroup;
+			children = (
+				1F28EC92204DAB890073D14B /* MergeSort.cpp */,
+			);
+			path = Sort;
 			sourceTree = "<group>";
 		};
 		1F57E23C203172810018B319 = {
@@ -275,7 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F28EC8F204D7C230073D14B /* PowerSet.cpp in Sources */,
+				1F28EC93204DAB890073D14B /* MergeSort.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
