@@ -29,17 +29,17 @@ int isOk(int r,int c,int check[]){
         tempI -= 1;
         tempJ += 1;
     }
-    check[r] = c;
+    //check[r] = c;
     return 1;
 }
 void dfs(int r,int check[]){
     if ( r == N - 1){
         countN++;
-        
     }
     else{
         for(int c = 0 ; c < N; c++){
             if(isOk(r+1,c,check)){
+                check[r+1] = c;
                 dfs(r+1,check);
             }
         }
