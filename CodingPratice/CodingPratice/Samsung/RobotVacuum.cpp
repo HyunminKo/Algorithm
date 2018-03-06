@@ -1,12 +1,12 @@
 #include <cstdio>
-#include <utility>
-#include <stdlib.h>
+#include <iostream>
 
 using namespace std;
 int N,M,r,c,d,count=1;
 int map[50][50];
 bool cleaned[50][50];
 int directionOfRotation[4]={3,0,1,2};
+
 bool isCleanedOrWall(int i , int j){
     if(cleaned[i][j] || map[i][j] == 1 || i<0 || j<0 || i>= N || j>= M)
         return true;
@@ -68,8 +68,10 @@ void clean(int i ,int j ,int d){
         count++;
     cleaned[i][j] = true;
     pair<int, int> temp = nextIndex(i, j, d);
+    
     if(!isCleanedOrWall(temp.first, temp.second)){
         clean(temp.first, temp.second, directionOfRotation[d]);
+        return ;
     }else{
         int temp2 = d;
         for(int k = 0; k < 4; k++){
@@ -83,7 +85,6 @@ void clean(int i ,int j ,int d){
         temp2 = d;
         int isFinal = 0;
         for(int k = 0 ; k < 4 ; k++){
-            
             pair<int, int> temp = isBack(i, j, temp2);
             if(temp.first == -1){
                 isFinal++;
@@ -96,10 +97,11 @@ void clean(int i ,int j ,int d){
                 }
                 if(isFinal>=4){
                     printf("%d\n",count);
-                    exit(0);
+                    return;
                 }
             }else{
                 clean(temp.first, temp.second, d);
+                return ;
             }
             temp2 = directionOfRotation[temp2];
 

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F28EC95204E69B20073D14B /* RobotVacuum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F28EC94204E69B20073D14B /* RobotVacuum.cpp */; };
+		1F28EC97204ECABF0073D14B /* Lab.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F28EC96204ECABF0073D14B /* Lab.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -54,6 +54,7 @@
 		1F28EC8E204D7C230073D14B /* PowerSet.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PowerSet.cpp; sourceTree = "<group>"; };
 		1F28EC92204DAB890073D14B /* MergeSort.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MergeSort.cpp; sourceTree = "<group>"; };
 		1F28EC94204E69B20073D14B /* RobotVacuum.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RobotVacuum.cpp; sourceTree = "<group>"; };
+		1F28EC96204ECABF0073D14B /* Lab.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Lab.cpp; sourceTree = "<group>"; };
 		1F29594E2048866200EAE57D /* NQueen.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NQueen.cpp; sourceTree = "<group>"; };
 		1F57E245203172810018B319 /* CodingPratice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodingPratice; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F57E248203172810018B319 /* Helloworld.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Helloworld.cpp; sourceTree = "<group>"; };
@@ -129,6 +130,7 @@
 				1F206F022048096D0029BA33 /* Tetromino.cpp */,
 				1F29594E2048866200EAE57D /* NQueen.cpp */,
 				1F28EC94204E69B20073D14B /* RobotVacuum.cpp */,
+				1F28EC96204ECABF0073D14B /* Lab.cpp */,
 			);
 			path = Samsung;
 			sourceTree = "<group>";
@@ -295,7 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F28EC95204E69B20073D14B /* RobotVacuum.cpp in Sources */,
+				1F28EC97204ECABF0073D14B /* Lab.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
