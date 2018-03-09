@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1FFC4FDB2050002C008EEA4A /* Resignation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FFC4FDA2050002C008EEA4A /* Resignation.cpp */; };
+		1F3125042052628000B4EFD2 /* Gear.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F3125032052628000B4EFD2 /* Gear.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -46,7 +46,6 @@
 		1F206F002048088A0029BA33 /* OperatorAdd.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OperatorAdd.cpp; sourceTree = "<group>"; };
 		1F206F022048096D0029BA33 /* Tetromino.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Tetromino.cpp; sourceTree = "<group>"; };
 		1F23C278203D9DBF004A8825 /* CountingWord.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CountingWord.cpp; sourceTree = "<group>"; };
-		1F28EC7E204A8CAC0073D14B /* DFS.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DFS.cpp; sourceTree = "<group>"; };
 		1F28EC82204C32D60073D14B /* Basic.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Basic.cpp; sourceTree = "<group>"; };
 		1F28EC84204C39B90073D14B /* Maze.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Maze.cpp; sourceTree = "<group>"; };
 		1F28EC86204D37C00073D14B /* CountingCellsinaBlob.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CountingCellsinaBlob.cpp; sourceTree = "<group>"; };
@@ -56,6 +55,7 @@
 		1F28EC94204E69B20073D14B /* RobotVacuum.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RobotVacuum.cpp; sourceTree = "<group>"; };
 		1F28EC96204ECABF0073D14B /* Lab.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Lab.cpp; sourceTree = "<group>"; };
 		1F29594E2048866200EAE57D /* NQueen.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NQueen.cpp; sourceTree = "<group>"; };
+		1F3125032052628000B4EFD2 /* Gear.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Gear.cpp; sourceTree = "<group>"; };
 		1F57E245203172810018B319 /* CodingPratice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodingPratice; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F57E248203172810018B319 /* Helloworld.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Helloworld.cpp; sourceTree = "<group>"; };
 		1F57E250203173CC0018B319 /* A+B.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "A+B.cpp"; sourceTree = "<group>"; };
@@ -70,6 +70,7 @@
 		1F57E266203186E00018B319 /* A+BNewLine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "A+BNewLine.cpp"; sourceTree = "<group>"; };
 		1F57E269203188B10018B319 /* SugarDelivery.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SugarDelivery.cpp; sourceTree = "<group>"; };
 		1FFC4FDA2050002C008EEA4A /* Resignation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Resignation.cpp; sourceTree = "<group>"; };
+		1FFC4FDD205173E5008EEA4A /* DFS_BFS.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DFS_BFS.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +134,7 @@
 				1F28EC94204E69B20073D14B /* RobotVacuum.cpp */,
 				1F28EC96204ECABF0073D14B /* Lab.cpp */,
 				1FFC4FDA2050002C008EEA4A /* Resignation.cpp */,
+				1F3125032052628000B4EFD2 /* Gear.cpp */,
 			);
 			path = Samsung;
 			sourceTree = "<group>";
@@ -146,17 +148,10 @@
 			path = "1차원배열사용하기";
 			sourceTree = "<group>";
 		};
-		1F28EC7D204A8C7C0073D14B /* Graph */ = {
-			isa = PBXGroup;
-			children = (
-				1F28EC7E204A8CAC0073D14B /* DFS.cpp */,
-			);
-			path = Graph;
-			sourceTree = "<group>";
-		};
 		1F28EC81204C28130073D14B /* Inflearn */ = {
 			isa = PBXGroup;
 			children = (
+				1FFC4FDC20505818008EEA4A /* Graph */,
 				1F28EC91204D93270073D14B /* Sort */,
 				1F28EC90204D931E0073D14B /* Recursion */,
 				1F28EC82204C32D60073D14B /* Basic.cpp */,
@@ -203,7 +198,6 @@
 			isa = PBXGroup;
 			children = (
 				1F28EC81204C28130073D14B /* Inflearn */,
-				1F28EC7D204A8C7C0073D14B /* Graph */,
 				1F206EFF204808790029BA33 /* Samsung */,
 				1F23C277203D9DA0004A8825 /* 1차원배열사용하기 */,
 				1F1CA43B2032E523003A2025 /* UsingFunction */,
@@ -241,6 +235,14 @@
 			);
 			name = "사칙연산";
 			path = "사칙연산";
+			sourceTree = "<group>";
+		};
+		1FFC4FDC20505818008EEA4A /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				1FFC4FDD205173E5008EEA4A /* DFS_BFS.cpp */,
+			);
+			path = Graph;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,7 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FFC4FDB2050002C008EEA4A /* Resignation.cpp in Sources */,
+				1F3125042052628000B4EFD2 /* Gear.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
