@@ -1,24 +1,48 @@
-#include <iostream>
 #include <cstdio>
-
+#include <vector>
+#include <iostream>
 using namespace std;
-
-int arr[5]={2,3,4,5,1};
-bool check[5];
-void go(int i, int k){
-    if( k == 5){
-        for(int i = 0 ; i < 5; i++){
-            if(check[i]) printf("%d ",arr[i]);
-        }
-        printf("\n");
-        return ;
+class alba{
+public:
+    int start_date,duration,income;
+    alba(int s,int d,int i) { start_date=s;duration=d;income=i; }
+};
+/*
+ * Time complexity: TODO
+ * Space complexity: TODO
+ */
+bool checkSchedule[200];
+bool checkDate[200];
+vector<alba* > albaV;
+int N;
+int maxN = -1000000000;
+void checkFalse(int k){
+    
+}
+void checkTrue(int k){
+    
+}
+void startAlba(int k){
+    if(k == N){
+        
     }
-    check[i] = true;
-    go(i+1,k+1);
-    check[i] = false;
-    go(i+1,k+1);
+    checkFalse(k);
+    startAlba(k+1);
+    checkTrue(k);
+    startAlba(k+1);
 }
-int main(){
-    for(int i = 0 ; i < 5; i ++)
-        go(i,0);
+int main(int argc, const char *argv[]) {
+
+    scanf("%d\n", &N);
+    
+    for (int i = 0; i < N; ++i) {
+        int start_date, duration, income;
+        scanf("%d %d %d\n", &start_date, &duration, &income);
+        albaV.push_back(new alba(start_date,duration,income));
+    }
+    
+    startAlba(0);
+    
+    return 0;
 }
+

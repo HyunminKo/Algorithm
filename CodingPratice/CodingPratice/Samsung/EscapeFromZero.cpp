@@ -4,9 +4,8 @@
 #include <algorithm>
 using namespace std;
 int N,M;
-char map[12][12];
-vector<pair<int,int>> locOfRed;
-vector<pair<int,int>> locOfBlue;
+char map[20][20];
+int rx,ry,bx,by;
 bool redSuccess = false;
 bool blueSuccess = false;
 int minN = 1000000000;
@@ -21,42 +20,48 @@ enum ColorBall{
     BLUE
 };
 int findOrder(int direction){ //RED가 먼저면 0 리턴, BLUE가 먼저면 1리턴
-    int Rx = locOfRed[0].first;
-    int Ry = locOfRed[0].second;
-    int Bx = locOfBlue[0].first;
-    int By = locOfBlue[0].second;
+    int nRx = rx;
+    int nRy = ry;
+    int nBx = bx;
+    int nBy = by;
     if(direction == LEFT){
-        return Ry < By ? RED: BLUE;
+        if(nRx != nBx) return RED;
+        return nRy < nBy ? RED: BLUE;
     }else if(direction == RIGHT){
-        return By < Ry ? RED: BLUE;
+        if(nRx != nBx) return RED;
+        return nBy < nRy ? RED: BLUE;
     }else if(direction == UP){
-        return Rx < Bx ? RED : RIGHT;
+        if(nRy != nBy) return RED;
+        return nRx < nBx ? RED : RIGHT;
     }else{
-        return Rx > Bx ? RED : RIGHT;
+        if(nRy != nBy) return RED;
+        return nRx > nBx ? RED : RIGHT;
     }
     return -1;
 }
-void backUp(char temp2[][12],char temp[][12]){
-    locOfRed.clear();
-    locOfBlue.clear();
+void backUp(char temp2[][20],char temp[][20]){
     for(int i = 0 ; i < N; i++){
         for(int j =0 ; j < M; j++){
             temp2[i][j]= temp[i][j];
-            if(temp[i][j] == 'R')
-                locOfRed.push_back(make_pair(i, j));
-            else if(temp[i][j] == 'B')
-                locOfBlue.push_back(make_pair(i, j));
+            if(temp[i][j] == 'R'){
+                rx = i;
+                ry = j;
+            }
+            else if(temp[i][j] == 'B'){
+                bx = i;
+                by = j;
+            }
         }
     }
 }
-void rotateAry(int direction, char ary[12],char temp[][12], int color){
+void rotateAry(int direction, char ary[20],char temp[][20], int color){
     int x,y;
     if(color == RED){
-        x = locOfRed[0].first;
-        y = locOfRed[0].second;
+        x = rx;
+        y = ry;
     }else{
-        x = locOfBlue[0].first;
-        y = locOfBlue[0].second;
+        x = bx;
+        y = by;
     }
     if(direction == LEFT){
         for(int i = 0 ; i < M; i++){
@@ -78,15 +83,15 @@ void rotateAry(int direction, char ary[12],char temp[][12], int color){
         }
     }
 }
-void updateMap(int direction, char ary[12], char temp[][12],int x, int y){
+void updateMap(int direction, char ary[20], char temp[][20],int x, int y){
     if(direction == LEFT){
         for(int i = 0 ; i < M; i++){
-             temp[x][i] = ary[i];
+            temp[x][i] = ary[i];
         }
     }else if(direction == RIGHT){
         int i = 0;
         for(int j = M-1 ; j >= 0; j--){
-             temp[x][i++] = ary[j];
+            temp[x][i++] = ary[j];
         }
     }else if(direction == UP){
         for(int i = 0 ; i < N; i++){
@@ -95,21 +100,21 @@ void updateMap(int direction, char ary[12], char temp[][12],int x, int y){
     }else if(direction == DOWN){
         int i = 0;
         for(int j = N-1 ; j >= 0; j--){
-             temp[i++][y]=ary[j];
+            temp[i++][y]=ary[j];
         }
     }
 }
-void move(int direction, char ary[12], char temp[][12], int color){
+void move(int direction, char ary[20], char temp[][20], int color){
     int x,y;
     if(color == RED){
-        x = locOfRed[0].first;
-        y = locOfRed[0].second;
+        x = rx;
+        y = ry;
     }else{
-        x = locOfBlue[0].first;
-        y = locOfBlue[0].second;
+        x = bx;
+        y = by;
     }
     int index;
-    for(index = 0 ; index < 12; index++){
+    for(index = 0 ; index < 20; index++){
         if(color ==RED){
             if(ary[index] == 'R') break;
         }else{
@@ -149,32 +154,38 @@ void move(int direction, char ary[12], char temp[][12], int color){
         }
     }
     if(color == RED){
-        locOfRed.clear();
         if(direction == UP){
-            locOfRed.push_back(make_pair(index, y));
+            rx = index;
+            ry = y;
         }else if(direction == LEFT){
-            locOfRed.push_back(make_pair(x, index));
+            rx = x;
+            ry = index;
         }else if(direction == RIGHT){
-            locOfRed.push_back(make_pair(x, (M-1)-index));
+            rx = x;
+            ry = (M-1)-index;
         }else{
-            locOfRed.push_back(make_pair((N-1)-index, y));
+            rx = (N-1)-index;
+            ry = y;
         }
     }
     else{
-        locOfBlue.clear();
         if(direction == UP){
-            locOfBlue.push_back(make_pair(index, y));
+            bx = index;
+            by = y;
         }else if(direction == LEFT){
-            locOfBlue.push_back(make_pair(x, index));
+            bx = x;
+            by = index;
         }else if(direction == RIGHT){
-            locOfBlue.push_back(make_pair(x, (M-1)-index));
+            bx = x;
+            by = (M-1)-index;
         }else{
-            locOfBlue.push_back(make_pair((N-1)-index, y));
+            bx = (N-1)-index;
+            by = y;
         }
     }
     updateMap(direction, ary, temp, x, y);
 }
-void rotateAndMove(int direction,char ary[12],char temp2[][12],int order){
+void rotateAndMove(int direction,char ary[20],char temp2[][20],int order){
     if(order == RED){
         rotateAry(direction, ary, temp2,RED);
         move(direction,ary,temp2,RED);
@@ -187,8 +198,13 @@ void rotateAndMove(int direction,char ary[12],char temp2[][12],int order){
         move(direction,ary,temp2,RED);
     }
 }
-void go(int direction,int count, char temp[][12]){
-    if(redSuccess == true && blueSuccess == false){
+void go(int direction,int count, char temp[][20]){
+    if(count >= 11){
+        blueSuccess = false;
+        redSuccess = false;
+        return;
+    }
+    else if(redSuccess == true && blueSuccess == false){
         minN = min(count,minN);
         redSuccess = false;
         return;
@@ -196,14 +212,10 @@ void go(int direction,int count, char temp[][12]){
         blueSuccess = false;
         redSuccess = false;
         return;
-    }else if(count >= 11){
-        blueSuccess = false;
-        redSuccess = false;
-        return;
     }
-    char temp2[12][12];
+    char temp2[20][20];
     backUp(temp2, temp);
-    char ary[12];
+    char ary[20];
     int order = findOrder(UP);
     rotateAndMove(UP,ary,temp2,order);
     go(UP,count+1,temp2); //UP
@@ -223,28 +235,24 @@ void go(int direction,int count, char temp[][12]){
 int main(){
     scanf("%d %d",&N,&M);
     for(int i = 0; i <N; i++){
-        for(int j = 0; j <M; j++){
-            scanf(" %c",&map[i][j]);
-            if(map[i][j] == 'R')
-                locOfRed.push_back(make_pair(i, j));
-            else if(map[i][j] == 'B')
-                locOfBlue.push_back(make_pair(i, j));
-        }
+        scanf("%s",map[i]);
     }
     for(int i = 0 ; i < 4; i++){
-        locOfRed.clear();
-        locOfBlue.clear();
-        char temp2[12][12];
+        char temp2[20][20];
         for(int i = 0 ; i < N; i++){
-            for(int j =0 ; j < N; j++){
+            for(int j =0 ; j < M; j++){
                 temp2[i][j]= map[i][j];
-                if(map[i][j] == 'R')
-                    locOfRed.push_back(make_pair(i, j));
-                else if(map[i][j] == 'B')
-                    locOfBlue.push_back(make_pair(i, j));
+                if(map[i][j] == 'R'){
+                    rx=i;
+                    ry=j;
+                }
+                else if(map[i][j] == 'B'){
+                    bx = i;
+                    by = j;
+                }
             }
         }
-        char ary[12];
+        char ary[20];
         int order = findOrder(i);
         rotateAndMove(i, ary, temp2, order);
         go(i,1,temp2);
@@ -254,3 +262,4 @@ int main(){
     printf("%d\n",minN);
     return 0;
 }
+
