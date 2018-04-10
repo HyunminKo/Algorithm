@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F2A6AB5207B4C6900DC275B /* MakeOne.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F2A6AB4207B4C6900DC275B /* MakeOne.cpp */; };
+		1F2A6AB7207B5A4300DC275B /* Sticker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F2A6AB6207B5A4300DC275B /* Sticker.cpp */; };
+		1F2A6AB9207C931E00DC275B /* Coin2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F2A6AB8207C931E00DC275B /* Coin2.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -56,6 +57,8 @@
 		1F28EC96204ECABF0073D14B /* Lab.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Lab.cpp; sourceTree = "<group>"; };
 		1F29594E2048866200EAE57D /* NQueen.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NQueen.cpp; sourceTree = "<group>"; };
 		1F2A6AB4207B4C6900DC275B /* MakeOne.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MakeOne.cpp; sourceTree = "<group>"; };
+		1F2A6AB6207B5A4300DC275B /* Sticker.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Sticker.cpp; sourceTree = "<group>"; };
+		1F2A6AB8207C931E00DC275B /* Coin2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Coin2.cpp; sourceTree = "<group>"; };
 		1F3125032052628000B4EFD2 /* Gear.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Gear.cpp; sourceTree = "<group>"; };
 		1F3125052052928800B4EFD2 /* Downhill.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Downhill.cpp; sourceTree = "<group>"; };
 		1F3125082052D73600B4EFD2 /* Fib.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Fib.cpp; sourceTree = "<group>"; };
@@ -200,6 +203,8 @@
 				1F31250A2052D83F00B4EFD2 /* Binomial.cpp */,
 				1F31250C2052F09B00B4EFD2 /* MatrixPath.cpp */,
 				1F31251020537CEA00B4EFD2 /* LCS.cpp */,
+				1F2A6AB6207B5A4300DC275B /* Sticker.cpp */,
+				1F2A6AB8207C931E00DC275B /* Coin2.cpp */,
 			);
 			path = DynamicProgramming;
 			sourceTree = "<group>";
@@ -327,7 +332,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F2A6AB5207B4C6900DC275B /* MakeOne.cpp in Sources */,
+				1F2A6AB7207B5A4300DC275B /* Sticker.cpp in Sources */,
+				1F2A6AB9207C931E00DC275B /* Coin2.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
