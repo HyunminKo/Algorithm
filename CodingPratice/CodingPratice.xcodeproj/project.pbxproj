@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F2A6AB9207C931E00DC275B /* Coin2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F2A6AB8207C931E00DC275B /* Coin2.cpp */; };
+		1F2A6ABC207CB1E900DC275B /* PinaryNumber.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F2A6ABB207CB1E900DC275B /* PinaryNumber.cpp */; };
+		1F2A6ABE207CDAAA00DC275B /* Tile01.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F2A6ABD207CDAAA00DC275B /* Tile01.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -58,6 +59,8 @@
 		1F2A6AB4207B4C6900DC275B /* MakeOne.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MakeOne.cpp; sourceTree = "<group>"; };
 		1F2A6AB6207B5A4300DC275B /* Sticker.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Sticker.cpp; sourceTree = "<group>"; };
 		1F2A6AB8207C931E00DC275B /* Coin2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Coin2.cpp; sourceTree = "<group>"; };
+		1F2A6ABB207CB1E900DC275B /* PinaryNumber.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PinaryNumber.cpp; sourceTree = "<group>"; };
+		1F2A6ABD207CDAAA00DC275B /* Tile01.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Tile01.cpp; sourceTree = "<group>"; };
 		1F3125032052628000B4EFD2 /* Gear.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Gear.cpp; sourceTree = "<group>"; };
 		1F3125052052928800B4EFD2 /* Downhill.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Downhill.cpp; sourceTree = "<group>"; };
 		1F3125082052D73600B4EFD2 /* Fib.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Fib.cpp; sourceTree = "<group>"; };
@@ -198,6 +201,8 @@
 		1F2A6ABA207CB16B00DC275B /* DynamicProgramming */ = {
 			isa = PBXGroup;
 			children = (
+				1F2A6ABB207CB1E900DC275B /* PinaryNumber.cpp */,
+				1F2A6ABD207CDAAA00DC275B /* Tile01.cpp */,
 			);
 			path = DynamicProgramming;
 			sourceTree = "<group>";
@@ -339,7 +344,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F2A6AB9207C931E00DC275B /* Coin2.cpp in Sources */,
+				1F2A6ABE207CDAAA00DC275B /* Tile01.cpp in Sources */,
+				1F2A6ABC207CB1E900DC275B /* PinaryNumber.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
