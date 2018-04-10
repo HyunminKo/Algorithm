@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F2A6ABC207CB1E900DC275B /* PinaryNumber.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F2A6ABB207CB1E900DC275B /* PinaryNumber.cpp */; };
 		1F2A6ABE207CDAAA00DC275B /* Tile01.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F2A6ABD207CDAAA00DC275B /* Tile01.cpp */; };
 /* End PBXBuildFile section */
 
@@ -345,7 +344,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F2A6ABE207CDAAA00DC275B /* Tile01.cpp in Sources */,
-				1F2A6ABC207CB1E900DC275B /* PinaryNumber.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
