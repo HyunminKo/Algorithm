@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F2A6AB7207B5A4300DC275B /* Sticker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F2A6AB6207B5A4300DC275B /* Sticker.cpp */; };
 		1F2A6AB9207C931E00DC275B /* Coin2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F2A6AB8207C931E00DC275B /* Coin2.cpp */; };
 /* End PBXBuildFile section */
 
@@ -196,6 +195,13 @@
 			path = Sort;
 			sourceTree = "<group>";
 		};
+		1F2A6ABA207CB16B00DC275B /* DynamicProgramming */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DynamicProgramming;
+			sourceTree = "<group>";
+		};
 		1F3125072052D72400B4EFD2 /* DynamicProgramming */ = {
 			isa = PBXGroup;
 			children = (
@@ -228,6 +234,7 @@
 		1F57E247203172810018B319 /* CodingPratice */ = {
 			isa = PBXGroup;
 			children = (
+				1F2A6ABA207CB16B00DC275B /* DynamicProgramming */,
 				1F28EC81204C28130073D14B /* Inflearn */,
 				1F206EFF204808790029BA33 /* Samsung */,
 				1F23C277203D9DA0004A8825 /* 1차원배열사용하기 */,
@@ -332,7 +339,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F2A6AB7207B5A4300DC275B /* Sticker.cpp in Sources */,
 				1F2A6AB9207C931E00DC275B /* Coin2.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
