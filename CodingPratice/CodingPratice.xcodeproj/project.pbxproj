@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F9E20AC207FB0F9007C282B /* numberWrite1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F9E20AB207FB0F9007C282B /* numberWrite1.cpp */; };
+		1F9E20AE207FB299007C282B /* Add123.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F9E20AD207FB299007C282B /* Add123.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -89,6 +89,7 @@
 		1F9E20A5207F63D5007C282B /* permutation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = permutation.cpp; sourceTree = "<group>"; };
 		1F9E20A8207FACB8007C282B /* Operator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Operator.cpp; sourceTree = "<group>"; };
 		1F9E20AB207FB0F9007C282B /* numberWrite1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = numberWrite1.cpp; sourceTree = "<group>"; };
+		1F9E20AD207FB299007C282B /* Add123.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Add123.cpp; sourceTree = "<group>"; };
 		1FFC4FDA2050002C008EEA4A /* Resignation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Resignation.cpp; sourceTree = "<group>"; };
 		1FFC4FDD205173E5008EEA4A /* DFS_BFS.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DFS_BFS.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -305,6 +306,7 @@
 			isa = PBXGroup;
 			children = (
 				1F9E20AB207FB0F9007C282B /* numberWrite1.cpp */,
+				1F9E20AD207FB299007C282B /* Add123.cpp */,
 			);
 			path = Bruteforce;
 			sourceTree = "<group>";
@@ -373,7 +375,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F9E20AC207FB0F9007C282B /* numberWrite1.cpp in Sources */,
+				1F9E20AE207FB299007C282B /* Add123.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
