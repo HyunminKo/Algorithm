@@ -73,7 +73,6 @@ int start(){
             tail.pop();
             map[temp.first][temp.second] = EMPTY;
         }
-            
         total_time++;
     }
     return total_time;
