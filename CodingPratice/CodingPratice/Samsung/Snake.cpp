@@ -6,8 +6,7 @@ using namespace std;
 
 int N,K,dirSize;
 vector<pair<int, int>> DirV;
-queue<pair<int, int>> changeDirV;
-queue<int> previousDirV;
+queue<pair<int, int>> tail;
 int map[102][102];
 const int EMPTY = 0;
 const int PASS = 1;
@@ -37,11 +36,12 @@ int findNextDirection(int cD,int nD){
     return direction;
 }
 int start(){
-    int nx=0,ny=1,ex=0,ey=0,nextTime=0,temp=0,timeSize=0,length=1;
-    
+    int nx=0,ny=1,nextTime=0,temp=0,timeSize=0,length=1;
+    bool isApple = false;
     timeSize = (int)DirV.size();
     if(timeSize!=0)
         nextTime = DirV[0].first;
+    tail.push(make_pair(nx, ny));
     while(1){
         if(nx<0 || ny<0 || nx>=N || ny>=N)
             break;
@@ -50,43 +50,14 @@ int start(){
         if(map[nx][ny] == APPLE){
             map[nx][ny] = PASS;
             length++;
-            if(length == 2){
-                ex = nx;
-                ey = ny;
-                map[ex][ey] = PASS;
-            }else{
-                
-            }
+            isApple = true;
         }
         else if(map[nx][ny] == EMPTY){
             map[nx][ny] = PASS;
-            int changeSize = (int) changeDirV.size();
-            int preSize = (int) previousDirV.size();
-            int preDirection = direction;
-            int cx=-1,cy=-1;
-            if(changeSize!=0 && preSize!=0){
-                pair<int, int> temp = changeDirV.front();
-                cx = temp.first;
-                cy = temp.second;
-                preDirection = previousDirV.front();
-                if(ex == cx && ey == cy){
-                    changeDirV.pop();
-                    previousDirV.pop();
-                }
-            }
-            if(length == 1){
-                ex = nx;
-                ey = ny;
-                map[ex][ey] = EMPTY;
-            }else{
-                map[ex][ey] = EMPTY;
-                ex = ex + dx[preDirection];
-                ey = ey + dy[preDirection];
-            }
+            isApple = false;
         }
+        tail.push(make_pair(nx, ny));
         if(total_time == nextTime){
-            changeDirV.push(make_pair(nx, ny));
-            previousDirV.push(direction);
             int dirVsize = (int) DirV.size();
             if(dirVsize!=0){
                 int nextDirection = DirV[temp++].second;
@@ -97,6 +68,12 @@ int start(){
         }
         nx = nx + dx[direction];
         ny = ny + dy[direction];
+        if(!isApple){
+            pair<int,int> temp = tail.front();
+            tail.pop();
+            map[temp.first][temp.second] = EMPTY;
+        }
+            
         total_time++;
     }
     return total_time;
