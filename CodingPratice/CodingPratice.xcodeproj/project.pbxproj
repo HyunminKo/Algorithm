@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F9E20A9207FACB8007C282B /* Operator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F9E20A8207FACB8007C282B /* Operator.cpp */; };
+		1F9E20AC207FB0F9007C282B /* numberWrite1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F9E20AB207FB0F9007C282B /* numberWrite1.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -88,6 +88,7 @@
 		1F6459A12062B26C00030EBF /* 2048.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 2048.cpp; sourceTree = "<group>"; };
 		1F9E20A5207F63D5007C282B /* permutation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = permutation.cpp; sourceTree = "<group>"; };
 		1F9E20A8207FACB8007C282B /* Operator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Operator.cpp; sourceTree = "<group>"; };
+		1F9E20AB207FB0F9007C282B /* numberWrite1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = numberWrite1.cpp; sourceTree = "<group>"; };
 		1FFC4FDA2050002C008EEA4A /* Resignation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Resignation.cpp; sourceTree = "<group>"; };
 		1FFC4FDD205173E5008EEA4A /* DFS_BFS.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DFS_BFS.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -257,6 +258,7 @@
 		1F57E247203172810018B319 /* CodingPratice */ = {
 			isa = PBXGroup;
 			children = (
+				1F9E20AA207FB0C1007C282B /* Bruteforce */,
 				1F2A6AC1207D945C00DC275B /* Review */,
 				1F2A6ABA207CB16B00DC275B /* DynamicProgramming */,
 				1F28EC81204C28130073D14B /* Inflearn */,
@@ -297,6 +299,14 @@
 			);
 			name = "사칙연산";
 			path = "사칙연산";
+			sourceTree = "<group>";
+		};
+		1F9E20AA207FB0C1007C282B /* Bruteforce */ = {
+			isa = PBXGroup;
+			children = (
+				1F9E20AB207FB0F9007C282B /* numberWrite1.cpp */,
+			);
+			path = Bruteforce;
 			sourceTree = "<group>";
 		};
 		1FFC4FDC20505818008EEA4A /* Graph */ = {
@@ -363,7 +373,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F9E20A9207FACB8007C282B /* Operator.cpp in Sources */,
+				1F9E20AC207FB0F9007C282B /* numberWrite1.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
