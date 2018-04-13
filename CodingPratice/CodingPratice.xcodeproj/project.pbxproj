@@ -215,6 +215,8 @@
 		1F2A6ABA207CB16B00DC275B /* DynamicProgramming */ = {
 			isa = PBXGroup;
 			children = (
+				1F2A6AB6207B5A4300DC275B /* Sticker.cpp */,
+				1F2A6AB8207C931E00DC275B /* Coin2.cpp */,
 				1F2A6ABB207CB1E900DC275B /* PinaryNumber.cpp */,
 				1F2A6ABD207CDAAA00DC275B /* Tile01.cpp */,
 				1F2A6ABF207CFB1200DC275B /* Stairs.cpp */,
@@ -239,8 +241,6 @@
 				1F31250A2052D83F00B4EFD2 /* Binomial.cpp */,
 				1F31250C2052F09B00B4EFD2 /* MatrixPath.cpp */,
 				1F31251020537CEA00B4EFD2 /* LCS.cpp */,
-				1F2A6AB6207B5A4300DC275B /* Sticker.cpp */,
-				1F2A6AB8207C931E00DC275B /* Coin2.cpp */,
 			);
 			path = DynamicProgramming;
 			sourceTree = "<group>";
