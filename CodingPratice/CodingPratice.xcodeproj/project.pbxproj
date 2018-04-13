@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F9E20B0207FB4C7007C282B /* maxDiff.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F9E20AF207FB4C7007C282B /* maxDiff.cpp */; };
+		1F9E20B420808442007C282B /* rollTheDice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F9E20B320808442007C282B /* rollTheDice.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -91,6 +91,8 @@
 		1F9E20AB207FB0F9007C282B /* numberWrite1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = numberWrite1.cpp; sourceTree = "<group>"; };
 		1F9E20AD207FB299007C282B /* Add123.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Add123.cpp; sourceTree = "<group>"; };
 		1F9E20AF207FB4C7007C282B /* maxDiff.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = maxDiff.cpp; sourceTree = "<group>"; };
+		1F9E20B120807FB5007C282B /* SupervisorOfexam.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SupervisorOfexam.cpp; sourceTree = "<group>"; };
+		1F9E20B320808442007C282B /* rollTheDice.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = rollTheDice.cpp; sourceTree = "<group>"; };
 		1FFC4FDA2050002C008EEA4A /* Resignation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Resignation.cpp; sourceTree = "<group>"; };
 		1FFC4FDD205173E5008EEA4A /* DFS_BFS.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DFS_BFS.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -163,6 +165,8 @@
 				1F352E92206B614800050A03 /* EscapeFromZero.cpp */,
 				1F56D8E1207F2ED9003CA426 /* Snake.cpp */,
 				1F9E20A5207F63D5007C282B /* permutation.cpp */,
+				1F9E20B120807FB5007C282B /* SupervisorOfexam.cpp */,
+				1F9E20B320808442007C282B /* rollTheDice.cpp */,
 			);
 			path = Samsung;
 			sourceTree = "<group>";
@@ -377,7 +381,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F9E20B0207FB4C7007C282B /* maxDiff.cpp in Sources */,
+				1F9E20B420808442007C282B /* rollTheDice.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
