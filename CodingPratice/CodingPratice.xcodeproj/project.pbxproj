@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F9E20B420808442007C282B /* rollTheDice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F9E20B320808442007C282B /* rollTheDice.cpp */; };
+		1F9E20B72080F9D3007C282B /* Tomato1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F9E20B62080F9D3007C282B /* Tomato1.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -93,6 +93,7 @@
 		1F9E20AF207FB4C7007C282B /* maxDiff.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = maxDiff.cpp; sourceTree = "<group>"; };
 		1F9E20B120807FB5007C282B /* SupervisorOfexam.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SupervisorOfexam.cpp; sourceTree = "<group>"; };
 		1F9E20B320808442007C282B /* rollTheDice.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = rollTheDice.cpp; sourceTree = "<group>"; };
+		1F9E20B62080F9D3007C282B /* Tomato1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Tomato1.cpp; sourceTree = "<group>"; };
 		1FFC4FDA2050002C008EEA4A /* Resignation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Resignation.cpp; sourceTree = "<group>"; };
 		1FFC4FDD205173E5008EEA4A /* DFS_BFS.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DFS_BFS.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -264,6 +265,7 @@
 		1F57E247203172810018B319 /* CodingPratice */ = {
 			isa = PBXGroup;
 			children = (
+				1F9E20B52080F91C007C282B /* DFSorBFS */,
 				1F9E20AA207FB0C1007C282B /* Bruteforce */,
 				1F2A6AC1207D945C00DC275B /* Review */,
 				1F2A6ABA207CB16B00DC275B /* DynamicProgramming */,
@@ -315,6 +317,14 @@
 				1F9E20AF207FB4C7007C282B /* maxDiff.cpp */,
 			);
 			path = Bruteforce;
+			sourceTree = "<group>";
+		};
+		1F9E20B52080F91C007C282B /* DFSorBFS */ = {
+			isa = PBXGroup;
+			children = (
+				1F9E20B62080F9D3007C282B /* Tomato1.cpp */,
+			);
+			path = DFSorBFS;
 			sourceTree = "<group>";
 		};
 		1FFC4FDC20505818008EEA4A /* Graph */ = {
@@ -381,7 +391,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F9E20B420808442007C282B /* rollTheDice.cpp in Sources */,
+				1F9E20B72080F9D3007C282B /* Tomato1.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
