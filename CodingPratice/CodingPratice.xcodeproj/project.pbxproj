@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F9E20B72080F9D3007C282B /* Tomato1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F9E20B62080F9D3007C282B /* Tomato1.cpp */; };
+		1F5E3633208220F000262F95 /* NandM1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F5E3632208220F000262F95 /* NandM1.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -84,6 +84,7 @@
 		1F57E264203186020018B319 /* Remainder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Remainder.cpp; sourceTree = "<group>"; };
 		1F57E266203186E00018B319 /* A+BNewLine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "A+BNewLine.cpp"; sourceTree = "<group>"; };
 		1F57E269203188B10018B319 /* SugarDelivery.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SugarDelivery.cpp; sourceTree = "<group>"; };
+		1F5E3632208220F000262F95 /* NandM1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NandM1.cpp; sourceTree = "<group>"; };
 		1F64599F2062B02500030EBF /* Aramp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Aramp.cpp; sourceTree = "<group>"; };
 		1F6459A12062B26C00030EBF /* 2048.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 2048.cpp; sourceTree = "<group>"; };
 		1F9E20A5207F63D5007C282B /* permutation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = permutation.cpp; sourceTree = "<group>"; };
@@ -168,6 +169,7 @@
 				1F9E20A5207F63D5007C282B /* permutation.cpp */,
 				1F9E20B120807FB5007C282B /* SupervisorOfexam.cpp */,
 				1F9E20B320808442007C282B /* rollTheDice.cpp */,
+				1F5E3632208220F000262F95 /* NandM1.cpp */,
 			);
 			path = Samsung;
 			sourceTree = "<group>";
@@ -391,7 +393,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F9E20B72080F9D3007C282B /* Tomato1.cpp in Sources */,
+				1F5E3633208220F000262F95 /* NandM1.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
