@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F804FD420830440009CCC4B /* Operator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F9E20A8207FACB8007C282B /* Operator.cpp */; };
+		1F49E36A2099978300ECAD8D /* CyclicRotation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F49E3692099978300ECAD8D /* CyclicRotation.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -70,6 +70,10 @@
 		1F31250C2052F09B00B4EFD2 /* MatrixPath.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MatrixPath.cpp; sourceTree = "<group>"; };
 		1F31251020537CEA00B4EFD2 /* LCS.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LCS.cpp; sourceTree = "<group>"; };
 		1F352E92206B614800050A03 /* EscapeFromZero.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EscapeFromZero.cpp; sourceTree = "<group>"; };
+		1F49E361209841E800ECAD8D /* stringPratice.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = stringPratice.cpp; sourceTree = "<group>"; };
+		1F49E36420984E6B00ECAD8D /* SaveHumanity.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SaveHumanity.cpp; sourceTree = "<group>"; };
+		1F49E367209994D600ECAD8D /* BinaryGap.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryGap.cpp; sourceTree = "<group>"; };
+		1F49E3692099978300ECAD8D /* CyclicRotation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CyclicRotation.cpp; sourceTree = "<group>"; };
 		1F56D8E1207F2ED9003CA426 /* Snake.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Snake.cpp; sourceTree = "<group>"; };
 		1F57E245203172810018B319 /* CodingPratice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodingPratice; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F57E248203172810018B319 /* Helloworld.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Helloworld.cpp; sourceTree = "<group>"; };
@@ -252,6 +256,31 @@
 			path = DynamicProgramming;
 			sourceTree = "<group>";
 		};
+		1F49E360209841AA00ECAD8D /* stringPractice */ = {
+			isa = PBXGroup;
+			children = (
+				1F49E361209841E800ECAD8D /* stringPratice.cpp */,
+			);
+			path = stringPractice;
+			sourceTree = "<group>";
+		};
+		1F49E36320984E5200ECAD8D /* hackerRank */ = {
+			isa = PBXGroup;
+			children = (
+				1F49E36420984E6B00ECAD8D /* SaveHumanity.cpp */,
+			);
+			path = hackerRank;
+			sourceTree = "<group>";
+		};
+		1F49E366209994B400ECAD8D /* Codility */ = {
+			isa = PBXGroup;
+			children = (
+				1F49E367209994D600ECAD8D /* BinaryGap.cpp */,
+				1F49E3692099978300ECAD8D /* CyclicRotation.cpp */,
+			);
+			path = Codility;
+			sourceTree = "<group>";
+		};
 		1F57E23C203172810018B319 = {
 			isa = PBXGroup;
 			children = (
@@ -271,6 +300,9 @@
 		1F57E247203172810018B319 /* CodingPratice */ = {
 			isa = PBXGroup;
 			children = (
+				1F49E366209994B400ECAD8D /* Codility */,
+				1F49E36320984E5200ECAD8D /* hackerRank */,
+				1F49E360209841AA00ECAD8D /* stringPractice */,
 				1F9E20B52080F91C007C282B /* DFSorBFS */,
 				1F9E20AA207FB0C1007C282B /* Bruteforce */,
 				1F2A6AC1207D945C00DC275B /* Review */,
@@ -397,7 +429,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F804FD420830440009CCC4B /* Operator.cpp in Sources */,
+				1F49E36A2099978300ECAD8D /* CyclicRotation.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
