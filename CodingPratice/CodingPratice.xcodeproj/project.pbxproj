@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F49E379209A12A700ECAD8D /* FrogRiverOne.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F49E378209A12A700ECAD8D /* FrogRiverOne.cpp */; };
-		1F49E37B209AB16400ECAD8D /* MissingInteger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F49E37A209AB16400ECAD8D /* MissingInteger.cpp */; };
-		1F49E37D209AB54400ECAD8D /* MaxCounters.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F49E37C209AB54400ECAD8D /* MaxCounters.cpp */; };
+		1F49E383209B0E8B00ECAD8D /* GenomicRangeQuery.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F49E382209B0E8B00ECAD8D /* GenomicRangeQuery.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -84,6 +82,9 @@
 		1F49E378209A12A700ECAD8D /* FrogRiverOne.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FrogRiverOne.cpp; sourceTree = "<group>"; };
 		1F49E37A209AB16400ECAD8D /* MissingInteger.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MissingInteger.cpp; sourceTree = "<group>"; };
 		1F49E37C209AB54400ECAD8D /* MaxCounters.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MaxCounters.cpp; sourceTree = "<group>"; };
+		1F49E37E209AF3E100ECAD8D /* CountDiv.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CountDiv.cpp; sourceTree = "<group>"; };
+		1F49E380209AFB7E00ECAD8D /* PassingCars.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PassingCars.cpp; sourceTree = "<group>"; };
+		1F49E382209B0E8B00ECAD8D /* GenomicRangeQuery.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GenomicRangeQuery.cpp; sourceTree = "<group>"; };
 		1F56D8E1207F2ED9003CA426 /* Snake.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Snake.cpp; sourceTree = "<group>"; };
 		1F57E245203172810018B319 /* CodingPratice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodingPratice; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F57E248203172810018B319 /* Helloworld.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Helloworld.cpp; sourceTree = "<group>"; };
@@ -295,6 +296,9 @@
 				1F49E378209A12A700ECAD8D /* FrogRiverOne.cpp */,
 				1F49E37A209AB16400ECAD8D /* MissingInteger.cpp */,
 				1F49E37C209AB54400ECAD8D /* MaxCounters.cpp */,
+				1F49E37E209AF3E100ECAD8D /* CountDiv.cpp */,
+				1F49E380209AFB7E00ECAD8D /* PassingCars.cpp */,
+				1F49E382209B0E8B00ECAD8D /* GenomicRangeQuery.cpp */,
 			);
 			path = Codility;
 			sourceTree = "<group>";
@@ -447,9 +451,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F49E379209A12A700ECAD8D /* FrogRiverOne.cpp in Sources */,
-				1F49E37D209AB54400ECAD8D /* MaxCounters.cpp in Sources */,
-				1F49E37B209AB16400ECAD8D /* MissingInteger.cpp in Sources */,
+				1F49E383209B0E8B00ECAD8D /* GenomicRangeQuery.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
