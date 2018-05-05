@@ -303,6 +303,13 @@
 			path = Codility;
 			sourceTree = "<group>";
 		};
+		1F49E384209DB1EE00ECAD8D /* LINE */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LINE;
+			sourceTree = "<group>";
+		};
 		1F57E23C203172810018B319 = {
 			isa = PBXGroup;
 			children = (
@@ -322,6 +329,7 @@
 		1F57E247203172810018B319 /* CodingPratice */ = {
 			isa = PBXGroup;
 			children = (
+				1F49E384209DB1EE00ECAD8D /* LINE */,
 				1F49E366209994B400ECAD8D /* Codility */,
 				1F49E36320984E5200ECAD8D /* hackerRank */,
 				1F49E360209841AA00ECAD8D /* stringPractice */,
