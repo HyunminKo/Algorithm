@@ -1,45 +1,61 @@
-//
-//  main.cpp
-//  kakaoCodingTest
-//
-//  Created by 고현민 on 08/02/2018.
-//  Copyright © 2018 Ko. All rights reserved.
-//
-
 #include <iostream>
 #include <string>
+#include <vector>
+#include <math.h>
 using namespace std;
 
-int main(int argc, const char * argv[]) {
-    int n;
-    if ( argc >= 2){
-        cout << argv[1] << endl;
-        n = stoi(argv[1]);
-        cout << n << endl;
+int solution(vector<int> food_times, long long k) {
+    int answer = 0;
+    long long sumOfElems = 0;
+    for (auto& n: food_times){
+        sumOfElems += n;
     }
-    string result[n];
-
-    int arr1[] = {9,20,28,18,11};
-    int arr2[] = {30, 1, 21, 17, 28};
+    if(sumOfElems <= k){
+        return -1;
+    }
+    long long numOfFood = food_times.size();
+    long long willEat = floor(k / numOfFood);
+    long long remainderOfSec = k - willEat * numOfFood;
+    for(auto& n:food_times){
+        if(n==0)
+            continue;
+        n -= willEat;
+    }
     
-    for(int i = 0 ; i < n; i++){
-        int overLapNum = arr1[i] | arr2[i];
-        int quotient = overLapNum;
-        int remainder = 0;
-        string tempResult = "";
-        while(quotient > 1){
-            remainder = quotient % 2;
-            quotient = quotient / 2;
-            if(remainder == 1){
-                tempResult += "#"+tempResult;
-            }else{
-                tempResult += " "+tempResult;
-            }
+    int pointer = 0;
+    while(remainderOfSec != 0){
+        pointer +=1;
+        pointer %= numOfFood;
+        while(food_times[pointer] - 1 < 0){
+            pointer +=1;
+            pointer %= numOfFood;
         }
-        if(quotient == 1){
-            tempResult += "#"+tempResult;
-        }
-        result[i].append(tempResult);
+        food_times[pointer] -= 1;
+        remainderOfSec -=1;
     }
-    return 0;
+    answer = pointer+1;
+    return answer;
 }
+int main(){
+    vector<int> test = {3, 1, 2};
+    int k = 5;
+    
+    cout << solution(test,k) << endl;
+}
+// import math
+// def solution(food_times, k):
+//     if sum(food_times) <= k:
+//         return -1
+//     numOfFood = len(food_times)
+//     willEat = math.floor(k / numOfFood)
+//     remainderOfSec = k - willEat * numOfFood
+//     numOfFood = [x - willEat for x in food_times]
+//     pointer = 0
+//     while remainderOfSec == 0:
+//         while food_times[pointer] - 1 < 0:
+//             pointer +=1
+//             pointer %= numOfFood
+//         food_times[pointer] -= 1
+//         remadinerOfSec -=1
+//     answer = pointer + 1
+//     return answer
