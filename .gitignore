@@ -36,3 +36,10 @@ CodingPratice/CodingPratice/LINE
 CodingPratice/CodingPratice/Naver
 kakaoCodingTest/kakaoCodingTest.xcodeproj
 AlgorithmicProblemSolvingStrategies/AlgorithmicProblemSolvingStrategies.xcodeproj
+.idea
+.gradle
+gradle
+build.gradle
+settings.gradle
+gradlew*
+out
