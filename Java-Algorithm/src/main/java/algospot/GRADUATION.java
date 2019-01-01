@@ -3,7 +3,7 @@ package algospot;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class 졸업학기 {
+public class GRADUATION {
     static final int INF = 987654321;
     static int N, K, M, L;
     static int classes[] = new int[10], preRequisite[] = new int[12];
