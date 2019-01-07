@@ -1,4 +1,4 @@
-package com.oncoder;
+package com.oncoder.exam_7;
 
 public class two {
     public static int solution(int[] hints) {

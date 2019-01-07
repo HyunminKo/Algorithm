@@ -1,4 +1,4 @@
-package com.oncoder;
+package com.oncoder.exam_7;
 
 import java.util.PriorityQueue;
 import java.util.ArrayList;
