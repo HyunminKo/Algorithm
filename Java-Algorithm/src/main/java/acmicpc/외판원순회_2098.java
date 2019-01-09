@@ -29,7 +29,7 @@ public class 외판원순회_2098 {
 
         int result = cache[curr][visited];
         if(result != 0) return result;
-        result = 100000000;
+        result = 987654321;
         for(int next = 0 ; next < N; next++){
             if((visited & (1<<next)) == (1<<next)) continue;
             if(map[curr][next] == 0) continue;

@@ -13,5 +13,6 @@ public class 사다리조작_15684 {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
     }
 }

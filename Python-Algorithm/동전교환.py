@@ -34,5 +34,5 @@ print(coinChange(5000))
 print("--- %s seconds ---" % (time.time() - start_time))
 memo = [0] * 100001
 start_time = time.time()
-print(coinChangeDP(100000))
+print(coinChangeDP(10000))
 print("--- %s seconds ---" % (time.time() - start_time))

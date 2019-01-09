@@ -22,7 +22,7 @@ public class ExchangeProblem_13137 {
         for(int i = 1; i <= maxMoney; i++){
             int result = solveGreedy(i);
             if(memo[i] != result){
-                System.out.println(memo[i] + " " + result);
+//                System.out.println(memo[i] + " " + result);
                 resultStr="NO";
                 break;
             }
@@ -44,7 +44,7 @@ public class ExchangeProblem_13137 {
 
     private static int coinChangeDP(int maxMoney) {
         for(int i = 1 ; i <= maxMoney; i++){
-            int minValue = 1000000;
+            int minValue = 0x3f3f3f3f; //충분하게 큰 수.
             for(int j = 0; j < N; j++){
                 if(i >= coins[j]){
                     int result = memo[i - coins[j]];

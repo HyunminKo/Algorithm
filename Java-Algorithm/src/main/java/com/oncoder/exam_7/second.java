@@ -1,6 +1,6 @@
 package com.oncoder.exam_7;
 
-public class two {
+public class second {
     public static int solution(int[] hints) {
         int size = hints.length;
         int result = 0;
