@@ -2,7 +2,7 @@ package com.oncoder.exam_7;
 
 import java.util.Arrays;
 
-public class forth {
+public class fourth {
     private static int count = 0;
     public static void solution(int[] arr, int p){
         DFS(arr, 0,p);

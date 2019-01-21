@@ -2,7 +2,7 @@ package com.oncoder.exam_8;
 
 import java.util.Arrays;
 
-public class forth {
+public class fourth {
     static int[][] map = new int[2][3];
     static boolean[][] visited = new boolean[2][3];
     public static void main(String[] args) {
