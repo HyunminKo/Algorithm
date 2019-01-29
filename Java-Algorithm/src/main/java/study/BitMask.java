@@ -17,8 +17,8 @@ public class BitMask {
                     temp +="0";
                 }
             }
-//            System.out.println(temp);
-            System.out.println(temp2);
+            System.out.println(temp);
+//            System.out.println(temp2);
         }
     }
 }
