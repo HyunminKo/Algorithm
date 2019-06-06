@@ -1,41 +1,53 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.HashSet;
 
 public class Main {
-    public static int n, m;
-    public static int[][] area, dp;
+    static ArrayList<Integer> pick = new ArrayList<>();
+    static int M = 60;
+    static int size = 3;
+    public static void main(String[] args) {
+//        long time =System.nanoTime();
+//        dfs(0);
+//        System.out.println(System.nanoTime() - time);
+//        time = System.nanoTime();
+//        long set = (1 << M) - 1;
+//        for(long i = 0; i <= set; i++){
+//            if(Long.bitCount(i) == size){
+//                int a = 0;
+//                for(int j = 0; j < size; j++){
+//                    if(((i >> j)&1) == 1){
+//                        a++;
+//                    }
+//                }
+//            }
+//        }
+//        System.out.println(System.nanoTime() - time);
+        ArrayList<Integer> indexA = new ArrayList<>();
+        indexA.add(0);
+        ArrayList<Integer> indexB = new ArrayList<>();
+        indexB.add(0);
+        indexB.add(1);
+        HashSet<Integer> setA = new HashSet<>(indexA);
+        HashSet<Integer> setB = new HashSet<>(indexB);
+        System.out.println(setA.containsAll(setB));
+        System.out.println(setB.containsAll(setA));
+        System.out.println(setA.equals(setB));
+        System.out.println(setB.equals(setA));
+    }
 
-    public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        String[] nm = br.readLine().split(" ");
-        int ans = 0;
-
-        n = Integer.parseInt(nm[0]);
-        m = Integer.parseInt(nm[1]);
-        area = new int[n + 1][m + 1];
-        dp = new int[n + 1][m + 1];
-
-        for (int i = 0; i < n; i++) {
-            char[] line = br.readLine().toCharArray();
-            for (int j = 0; j < m; j++) {
-                area[i][j] = line[j] - '0';
-                if(area[i][j] == 1) {
-                    dp[i][j] = 1;
-                    ans = 1;
-                }
+    private static void dfs(int pos) {
+        if(pick.size() == size){
+            int a= 0;
+            for(int i = 0 ; i < pick.size(); i++){
+                a++;
             }
+            return;
         }
-
-        for (int i = 1; i < n; i++) {
-            for (int j = 1; j < m; j++) {
-                if (area[i][j] == 1) {
-                    dp[i][j] = Math.min(dp[i - 1][j - 1], Math.min(dp[i - 1][j], dp[i][j - 1])) + 1;
-                    ans = Math.max(dp[i][j], ans);
-                }
-            }
+        for(int i = pos; i < M; i++){
+            Integer ni = new Integer(i);
+            pick.add(ni);
+            dfs(i+1);
+            pick.remove(ni);
         }
-
-        System.out.println(ans * ans);
     }
 }

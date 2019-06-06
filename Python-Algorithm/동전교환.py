@@ -1,6 +1,11 @@
 import time
 
 coin = [6,4,1]
+900원 500 100 50
+
+700
+500 300 50
+
 def coinChange(change):
     if memo[change] != -1:
         return memo[change]

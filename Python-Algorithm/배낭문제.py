@@ -2,9 +2,11 @@ v=[10,40,30,50]
 w=[5,4,6,3]
 
 k=[[-1] * 11 for i in range(5)]
+bag=[0,0,0,0]
+maxValue = 0
+n = 4
 
-
-def knapsack(i, W):
+def knapsack_dp(i, W):
     global v
     global k
     global w
@@ -24,5 +26,19 @@ def knapsack(i, W):
 
     return k[n][j]
 
+def knapsack_allsearch(W, i, curValue, bag):
+    global maxValue,n,w,v
+    if W >= 0:
+        if i > n:
+            if maxValue < curValue:
+                maxValue = curValue
+                print(bag)
+        else:
+            bag[i - 1] = 1
+            knapsack_allsearch(W - w[i-1],i+1, curValue + v[i-1], bag)
+            bag[i - 1] = 0
+            knapsack_allsearch(W,i+1,curValue, bag)
 
-print(knapsack(4,10))
+print(knapsack_dp(4,10))
+knapsack_allsearch(10,1,0,bag)
+print(maxValue)

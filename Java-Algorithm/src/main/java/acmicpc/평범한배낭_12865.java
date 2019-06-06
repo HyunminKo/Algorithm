@@ -1,6 +1,5 @@
 package acmicpc;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class 평범한배낭_12865 {
@@ -27,3 +26,4 @@ public class 평범한배낭_12865 {
         System.out.println(K[N][W]);
     }
 }
+
