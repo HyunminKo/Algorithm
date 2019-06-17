@@ -6,6 +6,7 @@ import java.util.Map;
 public class JewelsandStones_771 {
     public static void main(String[] args) {
         System.out.println(numJewelsInStones("aA","aAAbbbbb"));
+        System.out.println("STR".toLowerCase());
     }
     public static int numJewelsInStones(String J, String S) {
         Map<Character , Integer> map = new HashMap<>();
