@@ -34,6 +34,11 @@ DerivedData/
 CodingPratice/CodingPratice.xcodeproj
 CodingPratice/CodingPratice/LINE
 CodingPratice/CodingPratice/Naver
+Java-Algorithm/src/main/java/kakao
+Java-Algorithm/src/main/java/line/down_2019
+Java-Algorithm/src/main/java/naver
+Java-Algorithm/src/main/java/nhn
+
 kakaoCodingTest/kakaoCodingTest.xcodeproj
 AlgorithmicProblemSolvingStrategies/AlgorithmicProblemSolvingStrategies.xcodeproj
 .idea
@@ -43,3 +48,5 @@ build.gradle
 settings.gradle
 gradlew*
 out
+
+
