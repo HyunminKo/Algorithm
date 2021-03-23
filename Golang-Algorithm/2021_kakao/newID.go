@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"os"
 	"strings"
+	"unicode"
 )
 
 func main() {
@@ -12,88 +13,78 @@ func main() {
 	input, _ := reader.ReadString('\n')
 	input = input[:len(input)-1]
 
+	var answer string
 	// 1 step
 	lower := strings.ToLower(input)
 	fmt.Println("1 step:", lower)
 
 	// 2 step
-	validChar := map[int32]bool{
-		'-': true,
-		'_': true,
-		'.': true,
-	}
-	var validStrings []string
 	for _, char := range lower {
-		pass := func(c int32) bool {
-			result := false
-			if c >= 48 && c <= 57 {
-				result = true
-			} else if c >= 97 && c <= 122 {
-				result = true
-			} else if c >= 65 && c <= 90 {
-				result = true
-			} else if _, ok := validChar[c]; ok {
-				result = true
+		pass := func(c rune) bool {
+			if unicode.IsDigit(c) || unicode.IsLetter(c) {
+				return true
 			}
-			return result
+			if c == '-' || c == '_' || c == '.' {
+				return true
+			}
+			return false
 		}
 		if pass(char) {
-			validStrings = append(validStrings, string(char))
+			answer += string(char)
 		}
 	}
-	validStr := strings.Join(validStrings, "")
-	fmt.Println("2 step:", validStr)
+	fmt.Println("2 step:", answer)
 
 	// 3 step
-	replaceStr := strings.ReplaceAll(validStr, "..", ".")
-	fmt.Println("3 step:", replaceStr)
+	answer = strings.ReplaceAll(answer, "..", ".")
+	fmt.Println("3 step:", answer)
 
 	// 4 step
 	for {
-		if len(replaceStr) == 0 {
+		if len(answer) == 0 {
 			break
 		}
-		start := replaceStr[0]
+		start := answer[0]
 		if start == '.' {
-			replaceStr = replaceStr[1:]
+			answer = answer[1:]
 		} else {
 			break
 		}
 	}
 	for {
-		if len(replaceStr) == 0 {
+		if len(answer) == 0 {
 			break
 		}
-		end := replaceStr[len(replaceStr)-1]
+		end := answer[len(answer)-1]
 		if end == '.' {
-			replaceStr = replaceStr[:len(replaceStr)-1]
+			answer = answer[:len(answer)-1]
 		} else {
 			break
 		}
 	}
-	fmt.Println("4 step:", replaceStr)
+	fmt.Println("4 step:", answer)
 
 	// 5 step
-	if replaceStr == "" {
-		replaceStr = "a"
+	if answer == "" {
+		answer = "a"
 	}
-	fmt.Println("5 step:", replaceStr)
+	fmt.Println("5 step:", answer)
 
 	// 6 step
-	if len(replaceStr) >= 16 {
-		replaceStr = replaceStr[:15]
-		end := replaceStr[len(replaceStr)-1]
+	if len(answer) >= 16 {
+		answer = answer[:15]
+		end := answer[len(answer)-1]
 		if end == '.' {
-			replaceStr = replaceStr[:len(replaceStr)-1]
+			answer = answer[:len(answer)-1]
 		}
 	}
-	fmt.Println("6 step:", replaceStr)
+	fmt.Println("6 step:", answer)
 
 	// 7 step
-	if len(replaceStr) <= 2 {
-		for len(replaceStr) < 3 {
-			replaceStr += string(replaceStr[len(replaceStr)-1])
+	if len(answer) <= 2 {
+		for len(answer) < 3 {
+			answer += string(answer[len(answer)-1])
 		}
 	}
-	fmt.Println("7 step:", replaceStr)
+	fmt.Println("7 step:", answer)
 }
