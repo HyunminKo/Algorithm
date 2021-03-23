@@ -6,16 +6,16 @@ public class section_01 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String str = sc.nextLine();
-        String res = null;
+        String res;
         if(containsAlphabet(str)){ //알파벳 포함된 경우: 16진수
-            res = convertHextoDec(str);
+            res = convertHexToDec(str);
         }else { //10진수
-            res = convertDectoHex(str);
+            res = convertDecToHex(str);
         }
         System.out.println(res);
     }
 
-    private static String convertDectoHex(String str) {
+    private static String convertDecToHex(String str) {
         StringBuilder sb = new StringBuilder();
         int num = Integer.parseInt(str);
         int q = num;
@@ -42,7 +42,7 @@ public class section_01 {
         return sb.toString();
     }
 
-    private static String convertHextoDec(String str) {
+    private static String convertHexToDec(String str) {
         int sum = 0;
         for(int i  = 0 ; i < str.length(); i++){
             int size = str.length() - i - 1;
